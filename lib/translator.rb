@@ -17,7 +17,7 @@ def get_japanese_emoticon(library, emoticon)
 end	
 
 
-def get_english_meaning	def get_english_meaning(library, emoticon)
+def get_english_meaning(library, emoticon)
   # code goes here	  dictionary = load_library(library)
   return "Sorry, that emoticon was not found" if dictionary["get_meaning"][emoticon].nil?
   dictionary["get_meaning"][emoticon]
