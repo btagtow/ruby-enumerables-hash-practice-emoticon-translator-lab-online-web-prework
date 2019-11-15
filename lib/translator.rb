@@ -10,10 +10,15 @@ def load_library(directory)
   translations
 end	
 
-def get_japanese_emoticon
-  # code goes here
-end
+def get_japanese_emoticon(library, emoticon)
+  # code goes here	  dictionary = load_library(library)
+  return "Sorry, that emoticon was not found" if dictionary["get_emoticon"][emoticon].nil?
+  dictionary["get_emoticon"][emoticon]
+end	end
 
-def get_english_meaning
-  # code goes here
-end
+
+def get_english_meaning	def get_english_meaning(library, emoticon)
+  # code goes here	  dictionary = load_library(library)
+  return "Sorry, that emoticon was not found" if dictionary["get_meaning"][emoticon].nil?
+  dictionary["get_meaning"][emoticon]
+end 	end 
