@@ -2,7 +2,11 @@
 
 def load_library(filetype)
   get_meaning, get_emoticon = {}, {}
-  YAML.load_file(directory).each do |desc, 
+  YAML.load_file(directory).each do |desc, data|
+    get_meaning[data[1]] = desc 
+    get_emoticon[data[0]] = data[1]
+  end 
+  tranlations = {"get_meaning"
   # code goes here
 end
 
