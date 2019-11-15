@@ -1,7 +1,7 @@
 # require modules here
 
 def load_library(filetype)
-  get_meaning, get_emoticon = {}{}
+  get_meaning, get_emoticon = {}, {}
   # code goes here
 end
 
