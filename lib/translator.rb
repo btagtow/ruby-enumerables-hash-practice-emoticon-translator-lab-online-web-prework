@@ -6,7 +6,8 @@ def load_library(filetype)
     get_meaning[data[1]] = desc 
     get_emoticon[data[0]] = data[1]
   end 
-  tranlations = {"get_meaning" => get_meaning, "get_emoticon"
+  tranlations = {"get_meaning" => get_meaning, "get_emoticon" => get_emoticon} 
+  translations
   # code goes here
 end
 
