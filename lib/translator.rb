@@ -1,5 +1,5 @@
 # require modules here
-require 'YAML'
+require 'yaml'
 def load_library(directory)
   # code goes here	  get_meaning, get_emoticon = {}, {}
   YAML.load_file(directory).each do |desc, data|
